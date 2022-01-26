@@ -1,0 +1,68 @@
+// Main container
+._main-container-crud-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+.form-container{
+    width: 500px;
+    max-width: 100%;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+// form
+._form-crud{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-control{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    border: none;
+}
+
+._input-form{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+    outline: none;
+    font-size: 15px;
+    padding: 10px;
+    font-size: 18px ;
+}
+// Button
+._form-button-submit{
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    border: 0px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all 500ms;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover{
+        background-color: #C0D8C0;
+    }
+}
+
+

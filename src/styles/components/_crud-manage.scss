@@ -1,0 +1,60 @@
+
+
+._main-container-crud-manage{
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px ;
+}
+
+.table{
+    width: 600px;
+    max-width: 100%;
+}
+
+
+// Buttons container
+._edit-and-delete-buttons{
+    display: flex;
+    gap: 5px;
+}
+
+// Edit button
+._edit-button{
+    width: 74px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFE162;
+}
+// Delete button
+._delete-button{
+    width: 74px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #DD4A48;
+}
+
+
+
+
