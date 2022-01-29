@@ -1,0 +1,50 @@
+
+._main-container-manage-crud{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table{
+    width: 700px;
+    margin-top: 50px;
+}
+
+// Buttons
+._manage-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+// Button edit
+._button-edit-manage{
+    width: 100%;
+    background-color: #FFE162;
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+}
+
+// Button delete
+._button-delete-manage{
+    width: 100%;
+    background-color: #FF6363;
+    padding: 5px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+}

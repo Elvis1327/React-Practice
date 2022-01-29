@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&family=Sora:wght@600;700&display=swap');
+
+$black-bootstrap: #212529;
+$navbar-effect: #caf0f8;
+
+@import './components/crud-create';
+@import './components/crud-manage';
+@import './components/loading';
+@import './components/navbar';
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+

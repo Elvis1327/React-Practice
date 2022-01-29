@@ -1,0 +1,27 @@
+
+._loading-main-container{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+._loading-spinner{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 10px solid #ccc;
+    border-left-color: lightseagreen;
+    animation: _loading-spinner 1s infinite linear;
+}
+
+@keyframes _loading-spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
