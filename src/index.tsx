@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import App from './App';
+import './styles/styles.scss';
+import { TodoProvider } from './context/TodoProvider';
 
 ReactDOM.render(
-  <App />,
+  <TodoProvider>
+      <App />
+  </TodoProvider>,
   document.getElementById('root')
 );
 
