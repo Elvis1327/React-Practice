@@ -1,0 +1,30 @@
+
+
+._todoapp-form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+// Input
+._todoapp-input{
+    padding: 10px;
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 18px;
+}
+
+// Buttons submit
+._todo-button-add-new{
+    color: white;
+    background-color: $main_color;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+

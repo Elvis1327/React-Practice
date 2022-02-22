@@ -1,0 +1,48 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+// Variables
+$main_color: #21325E;
+
+@import './components/allTask';
+@import './components/todo-form';
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #21325E;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// White box
+.main-container-todoapp{
+    max-width: 100%;
+    min-width: 600px;
+    min-height: 600px;
+    background-color: white;
+    padding: 50px;
+}
+
+._todoapp-h1-task{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    transition: all 400ms ease;
+    margin-bottom: 30px;
+    &:hover{
+        cursor: pointer;
+        color: $main_color;
+    }
+}
+
+

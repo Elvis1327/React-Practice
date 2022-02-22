@@ -1,0 +1,28 @@
+
+
+._todoapp-all-tasks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+._todoapp-card-task{
+    width: 100%;
+    background-color: $main_color;
+    padding: 7px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+._todoapp-delete-task{
+    border: none;
+    outline: none;
+    background-color: $main_color;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+

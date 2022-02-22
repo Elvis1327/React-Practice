@@ -1,10 +1,12 @@
 import React from 'react';
 
+import { TodoApp } from './pages/TodoApp';
+
 function App() {
 
   return (
-    <div className="App">
-      <h1>Testing</h1>
+    <div className="app">
+      <TodoApp />
     </div>
   );
 }
