@@ -12,7 +12,7 @@ interface Props {
 export const TodoProvider = ({children}: Props) => {
 
   const [ todoAppState, dispatch ] = useReducer(todoReducer, initialState);
-  
+  // Create a new task
   const createNewTask = (task: any) => {
     const todo = {
       type: Types.createNewTask,
@@ -24,7 +24,7 @@ export const TodoProvider = ({children}: Props) => {
     };
     dispatch(todo);
   };
-
+  // Delete a task
   const deleteTask = async (id: any) => {
 
     const action = {
@@ -46,16 +46,23 @@ export const TodoProvider = ({children}: Props) => {
           'Your file has been deleted.',
           'success'
         );
-    }
-
-
+    };
+  };
+  // Edit a task
+  const editTask = (task: any) => {
+    const action = {
+      type: Types.editTast,
+      payload: task
+    };
+    dispatch(action);
   }
 
   return (
     <TodoContext.Provider value={{
         createNewTask,
         todoAppState,
-        deleteTask
+        deleteTask,
+        editTask
     }}>
       {children}
     </TodoContext.Provider>

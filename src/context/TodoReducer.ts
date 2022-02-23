@@ -8,7 +8,7 @@ export const initialState = {
             done: false
         }
     ]
-}
+};
 
 export const todoReducer = (state = initialState, action: any) => {
     switch(action.type){
@@ -21,6 +21,16 @@ export const todoReducer = (state = initialState, action: any) => {
             return {
                 ...state,
                 tasks: state.tasks.filter((res: any) => res.id !== action.payload )
+            };
+        case Types.editTast:
+            return {
+                ...state,
+                tasks: state.tasks.map((res: any) => {
+                    if(res.id === action.payload){
+                        return {...res, done: !res.done}
+                    };
+                    return res;
+                })
             }
         default: return state;
     }

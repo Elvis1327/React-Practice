@@ -25,4 +25,14 @@
     cursor: pointer;
 }
 
+// Task text
+._todoapp-task-text{
+    color: white;
+    cursor: pointer;
+}
+
+._todoapp-task-text.true{
+    text-decoration: line-through;
+}
+
 
