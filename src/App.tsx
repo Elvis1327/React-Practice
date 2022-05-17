@@ -1,39 +1,19 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import Slider from 'react-slick';
+import React, { useState } from 'react';
 
-import { rickDataAction } from './actions/rickActions';
-
-function App() {
-  const dispatch = useDispatch();
-  const { data } = useSelector((state: any) => state.rickReducer);
-
-  useEffect(() => {
-    dispatch(rickDataAction());
-  },[dispatch]);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+export function App() {
+  const [ counter, setCounter ] = useState(0);
 
   return (
     <div className="App">
       <h1>Testing</h1>
       <hr />
-      <Slider {...settings}>
-        {data.map((res: any) => (
-          <div>
-            <img src={res.image} alt="pic" />
-          </div>
-        ))}
-      </Slider>
-      
+      <button onClick={() => setCounter(counter - 1)}>
+        Decrementar
+      </button>
+      <span>
+        {counter}
+      </span>
+      <button>Incrementar</button>
     </div>
   );
-}
-
-export default App;
+};
