@@ -1,12 +1,23 @@
-// Fonts
+// Roboto and Ubuntu Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@700&display=swap');
+
+
 
 // Vars
+$ubuntu_font: 'Ubuntu';
+$roboto_font: 'Roboto';
+
+@import './components/rick';
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: $roboto_font, sans-serif;
 }
+
+
+
 
 
 
