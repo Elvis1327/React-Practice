@@ -1,10 +1,30 @@
 import React from 'react';
+import { UserList } from './components/UsersList';
+import { Container, H1, NavLi, NavUl, UsersMainContainer } from './styles/Container.styled';
 
-function App() {
+export function App() {
+
   return (
-    <div className="App">
-      <h1>Testing</h1>
-    </div>
+    <>
+    <Container>
+      <H1>
+        Page
+      </H1>
+      <NavUl>
+        <NavLi>
+          Users
+        </NavLi>
+        <NavLi>
+          Commets
+        </NavLi>
+      </NavUl>
+    </Container>
+
+    <UsersMainContainer>
+      <UserList />
+    </UsersMainContainer>
+    </>
   );
-}
-export default App;
+};
+
+
