@@ -1,17 +1,18 @@
-Rick Component
-._rick-images{
+
+// Main container
+._main-rick-container{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.swiper-button-next{
-    background-image: url("https://www.downloadclipart.net/large/next-button-transparent-png.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    width: 50px;
-    &::after{
-        display: none;
-    }
+
+// Image
+._rick-image{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
 }
+

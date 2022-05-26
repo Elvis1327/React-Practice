@@ -20,15 +20,32 @@ export const Rick = () => {
       <Swiper
         modules={[Navigation, Pagination]}
         navigation={true}
-        slidesPerView={5}
+        speed={1000}
         spaceBetween={0}
         onSwiper={(swiper) => console.log(swiper)}
+        breakpoints={{
+          390: {
+            slidesPerView: 1,
+            slidesPerGroup: 1
+          },
+          600: {
+            slidesPerView: 3,
+            slidesPerGroup: 3
+          },
+          1000: {
+            slidesPerView: 5,
+            slidesPerGroup: 5
+          }
+        }}
       >
-   
         {rickData.map((res: Result) => (
             <>
               <SwiperSlide key={res.id}>
-              <img src={res.image} alt="ok" />
+              <img 
+                src={res.image} 
+                alt="ok" 
+                className='_rick-image'
+              />
               </SwiperSlide>
             </>
           ))}
